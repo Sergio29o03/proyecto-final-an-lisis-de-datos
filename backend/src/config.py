@@ -4,7 +4,7 @@ class Config:
 
 class DevelopmentConfig(Config):
     DEBUG = True
-    MYSQL_HOST = '192.168.1.104'
+    MYSQL_HOST = '192.168.1.105'
     MYSQL_USER = 'root'
     MYSQL_PASSWORD = '123456'
     MYSQL_DB = 'proyectoanalisis'

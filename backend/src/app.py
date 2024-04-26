@@ -43,8 +43,6 @@ def status_404(error):
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
-        # print(request.form['username'])
-        # print(request.form['password'])
         user = User(0, request.form['username'], request.form['password'])
         logged_user = ModelUser.login(db, user)
         if logged_user != None:
